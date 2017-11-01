@@ -4,13 +4,12 @@ var maleNames = ["Filip", "Piotr", "Bartek", "Michal", "Kuba"];
 var femaleMaleNames = femaleNames.concat(maleNames);
 console.log(femaleMaleNames);
 
-
 var newName = "Jarek";
 
-var namesWithoutNew = femaleMaleNames.indexOf(newName);
+var indexOfNewName = femaleMaleNames.indexOf(newName);
 
-if (namesWithoutNew === -1) {
-	var femaleMaleNamesPlus = femaleMaleNames.push(newName);
+if (indexOfNewName === -1) {
+    femaleMaleNames.push(newName);
 }
 
 console.log(femaleMaleNames);
